@@ -33,3 +33,11 @@ int solution(int num1, int num2) {
 } // 12.24 몫 구하기
 
 
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int age) {
+    return 2022 - age + 1;
+} // 12.24 나이 출력
