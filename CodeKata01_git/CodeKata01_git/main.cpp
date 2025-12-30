@@ -66,3 +66,13 @@ using namespace std;
 int solution(int num1, int num2) {
     return num1 + num2;
 } // 12.29 µÎ ¼öÀÇ ÇÕ
+
+
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int num1, int num2) {
+    return num1 * 1000 / num2;
+} // 12.30 µÎ ¼öÀÇ ³ª´°¼À
