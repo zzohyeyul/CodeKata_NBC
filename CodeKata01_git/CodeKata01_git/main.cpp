@@ -8,7 +8,8 @@ int solution(int num1, int num2)
     int answer = num1 - num2;
 
     return answer;
-} // 12.22 µÎ ¼öÀÇ Â÷
+} // 12.22 ë‘ ìˆ˜ì˜ ì°¨
+
 
 
 #include <string>
@@ -19,7 +20,8 @@ using namespace std;
 int solution(int num1, int num2) {
     int answer = num1 * num2;
     return answer;
-} // 12.23 µÎ ¼öÀÇ °ö
+} // 12.23 ë‘ ìˆ˜ì˜ ê³±
+
 
 
 #include <string>
@@ -30,7 +32,8 @@ using namespace std;
 int solution(int num1, int num2) {
     int answer = num1 / num2;
     return answer;
-} // 12.24 ¸ò ±¸ÇÏ±â
+} // 12.24 ëª« êµ¬í•˜ê¸°
+
 
 
 #include <string>
@@ -40,7 +43,8 @@ using namespace std;
 
 int solution(int age) {
     return 2022 - age + 1;
-} // 12.24 ³ªÀÌ Ãâ·Â
+} // 12.24 ë‚˜ì´ ì¶œë ¥
+
 
 
 #include <string>
@@ -55,7 +59,8 @@ int solution(int num1, int num2) {
     else {
         return -1;
     }
-} // 12.26 ¼ıÀÚ ºñ±³ÇÏ±â
+} // 12.26 ìˆ«ì ë¹„êµí•˜ê¸°
+
 
 
 #include <string>
@@ -65,7 +70,8 @@ using namespace std;
 
 int solution(int num1, int num2) {
     return num1 + num2;
-} // 12.29 µÎ ¼öÀÇ ÇÕ
+} // 12.29 ë‘ ìˆ˜ì˜ í•©
+
 
 
 #include <string>
@@ -75,7 +81,7 @@ using namespace std;
 
 int solution(int num1, int num2) {
     return num1 * 1000 / num2;
-} // 12.30 µÎ ¼öÀÇ ³ª´°¼À
+} // 12.30 ë‘ ìˆ˜ì˜ ë‚˜ëˆ—ì…ˆ
 
 
 #include <string>
@@ -94,4 +100,103 @@ int solution(int angle) {
     else {
         return 4;
     }
-} // 12.31 °¢µµ±â
+} // 12.31 ê°ë„ê¸°
+
+
+#include <iostream>
+
+using namespace std;
+
+int solution(int n) {
+    int sum = 0;
+
+    for (int i = 2; i <= n; i += 2) {
+        sum += i;
+    }
+
+    return sum;
+} // 1.2 ì§ìˆ˜ì˜ í•©
+
+
+
+#include <vector>
+
+using namespace std;
+
+double solution(vector<int> numbers) {
+    int sum = 0;
+
+    for (int i = 0; i < numbers.size(); i++) {
+        sum += numbers[i];
+    }
+
+    return static_cast<double>(sum) / numbers.size();
+} // 1.2 ë°°ì—´ì˜ í‰ê·  ê°’
+
+
+
+#include <string>
+#include <vector>
+
+using namespace std;
+
+string solution(int num) {
+    if (num % 2 == 0) {
+        return "Even";
+    }
+    else {
+        return "Odd";
+    }
+} // 1.5 ì§ìˆ˜ì™€ í™€ìˆ˜
+
+
+
+#include <string>
+#include <vector>
+
+using namespace std;
+
+double solution(vector<int> arr) {
+    int sum = 0;
+
+    for (int i = 0; i < arr.size(); i++) {
+        sum += arr[i];
+    }
+
+    return static_cast<double>(sum) / arr.size();
+} // 1.5 í‰ê·  êµ¬í•˜ê¸°
+
+
+
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int n) {
+    int sum = 0;
+
+    while (n > 0) {
+        sum += n % 10;
+        n /= 10;       
+    }
+
+    return sum;
+} // ìë¦¿ìˆ˜ ë”í•˜ê¸°
+
+
+
+#include <iostream>
+using namespace std;
+
+int solution(int n) {
+    int sum = 0;
+
+    for (int i = 1; i <= n; i++) {
+        if (n % i == 0) {
+            sum += i;
+        }
+    }
+
+    return sum;
+} // ì•½ìˆ˜ì˜ í•©
