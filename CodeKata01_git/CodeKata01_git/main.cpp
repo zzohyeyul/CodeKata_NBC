@@ -200,3 +200,17 @@ int solution(int n) {
 
     return sum;
 } // 약수의 합
+
+
+
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int n) {
+    for (int x = 2; x < n; x++) {
+        if (n % x == 1) return x;
+    }
+    return 0;
+} // 나머지가 1이 되는 숫자
