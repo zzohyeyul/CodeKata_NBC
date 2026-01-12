@@ -182,7 +182,7 @@ int solution(int n) {
     }
 
     return sum;
-} // 자릿수 더하기
+} // 1.6 자릿수 더하기
 
 
 
@@ -199,7 +199,7 @@ int solution(int n) {
     }
 
     return sum;
-} // 약수의 합
+} // 1.7 약수의 합
 
 
 
@@ -213,4 +213,36 @@ int solution(int n) {
         if (n % x == 1) return x;
     }
     return 0;
-} // 나머지가 1이 되는 숫자
+} // 1.8 나머지가 1이 되는 숫자
+
+
+
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int n) {
+    for (int x = 2; x < n; x++) {
+        if (n % x == 1) return x;
+    }
+    return -1;
+} // 1.12 나머지가 1이 되는 수 찾기
+
+
+
+#include <string>
+#include <vector>
+
+using namespace std;
+
+vector<long long> solution(int x, int n) {
+    vector<long long> ans;
+    ans.reserve(n);
+
+    long long step = x;
+    for (int i = 1; i <= n; i++) {
+        ans.push_back(step * i);
+    }
+    return ans;
+} // 1.12 x만큼 간격이 있는 n개의 숫자
