@@ -246,3 +246,19 @@ vector<long long> solution(int x, int n) {
     }
     return ans;
 } // 1.12 x만큼 간격이 있는 n개의 숫자
+
+
+
+#include <vector>
+using namespace std;
+
+vector<int> solution(long long n) {
+    vector<int> answer;
+
+    while (n > 0) {
+        answer.push_back(n % 10);
+        n /= 10;
+    }
+
+    return answer;
+} // 1.13 자연수 뒤집어 배열로 만들기
