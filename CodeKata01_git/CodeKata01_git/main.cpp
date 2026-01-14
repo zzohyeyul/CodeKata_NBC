@@ -262,3 +262,28 @@ vector<int> solution(long long n) {
 
     return answer;
 } // 1.13 자연수 뒤집어 배열로 만들기
+
+
+
+#include <string>
+using namespace std;
+
+int solution(string s) {
+    int sign = 1;
+    int idx = 0;
+    int result = 0;
+
+    if (s[0] == '-') {
+        sign = -1;
+        idx = 1;
+    }
+    else if (s[0] == '+') {
+        idx = 1;
+    }
+
+    for (; idx < s.length(); idx++) {
+        result = result * 10 + (s[idx] - '0');
+    }
+
+    return result * sign;
+} // 1.14 문자열을 정수로 바꾸기
